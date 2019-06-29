@@ -143,10 +143,12 @@ To install dependencies run:
 ```
 pip install -r requirements.txt
 ```
-The Download the checkpoints for the RCNN model from [Google Drive](https://drive.google.com/open?id=1E5qdlhBK471Bqp_iwDevIW2O7h4uc6Z1)
+The Download the checkpoints for the RCNN model from [Google Drive](https://drive.google.com/open?id=1E5qdlhBK471Bqp_iwDevIW2O7h4uc6Z1)</br>
+
 
 Now Move the Jobs.zip file inside the project and then unzip it.
 You should have a jobs folder in your main project folder.
+![alt text](https://github.com/ghost2718/formocr/blob/master/Examples/Screenshot%202019-06-29%20at%205.25.00%20PM.png)
 
 Now we have to install Luminoth
 ```
