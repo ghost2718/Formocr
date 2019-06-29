@@ -5,6 +5,8 @@ Form parsing project(For Internship at IITB)
 
 # Pipeline:
 The pipeline for the project consists of the following steps:</br>
+This is the input image:</br>
+![alt-text](https://github.com/ghost2718/formocr/blob/master/Examples/NACHFORMTB004-1.jpg)
 ## 1)Faster RCNN based object detection:</br>
 First we pass the input image through faster RCNN model to detect the date and A/C no fields.</br>
 The model was trained on 10 Images from the validation set provided.</br>
@@ -15,9 +17,15 @@ The model was trained for 550 epochs.</br>
 
 The Trained model is used to get Reigons of Intrest which are then extracted and then passed onto the next part of the pipeline.</br>
 #### Reigons of Intrest extracted:</br>
+![alt text](https://github.com/ghost2718/formocr/blob/master/Examples/roi0.png)
+</br>
+</br>
+</br>
+![alt text](https://github.com/ghost2718/formocr/blob/master/Examples/roi1.png)
 
-
-
+</br>
+</br>
+</br>
 
 
 
@@ -40,6 +48,20 @@ After recieving the coordinates of all the countours we extract all the ones whi
 These extracted countours are then saved in their respective directories.
 
 #### Segmented Characters:
+![alt text](https://github.com/ghost2718/formocr/blob/master/Examples/10.png)
+</br>
+![alt text](https://github.com/ghost2718/formocr/blob/master/Examples/16.png)
+</br>
+![alt text](https://github.com/ghost2718/formocr/blob/master/Examples/15.png)
+</br>
+![alt text](https://github.com/ghost2718/formocr/blob/master/Examples/14.png)
+</br>
+![alt text](https://github.com/ghost2718/formocr/blob/master/Examples/5.png)
+</br>
+![alt text](https://github.com/ghost2718/formocr/blob/master/Examples/9.png)
+</br>
+</br>
+</br>
 
 
 
@@ -79,17 +101,30 @@ The optimiser used is SGD with a batch size of 64.</br>
 
 
 The model trained on the above methods is used to predict the classes of the image which are then stored for further processing.
+</br>
+</br>
+![alt text](https://github.com/ghost2718/formocr/blob/master/models/graph.png)
+</br>
+</br>
+</br>
 
 
 ## 4)Output:
 The predicted classes are then preproced as required and the results are then printed on the screen.</br>
 The results are also stored onto a CSV file which is available on the output directory.
+The output would look like:</br>
+![alt text](https://github.com/ghost2718/formocr/blob/master/Examples/Screenshot%202019-06-29%20at%204.59.57%20PM.png)</br>
+</br>
+</br>
+</br>
+
 
 
 
 
 
 # SETUP AND RUNNING:
+This is built and meant to be run on python 3.</br>
 Clone the Repo into your local system:
 ```
 git clone https://github.com/ghost2718/formocr.git
@@ -126,6 +161,7 @@ here NUMBER_OF_EPOCH is the number of epochs you wish to train the model for.
 ## Additional:
 Once the code is run all the ROI and extracted characters are saved in segments directory and this will be cleaned once the code is run again.You can always view the segemented Images from the folder segments</br>
 For any problem please email:</br>
-[vaishnav160536@mechyd.ac.in](vaishnav160536@mechyd.ac.in)
+[vaishnav160536@mechyd.ac.in](vaishnav160536@mechyd.ac.in)</br>
+[link to my main github account](www.github.com/vaishnav2718)
 
 
