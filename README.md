@@ -143,6 +143,11 @@ To install dependencies run:
 ```
 pip install -r requirements.txt
 ```
+</br>
+If you are using Python3 preferably use:
+```
+pip3 install -r requirements.txt
+```
 The Download the checkpoints for the RCNN model from [Google Drive](https://drive.google.com/open?id=1E5qdlhBK471Bqp_iwDevIW2O7h4uc6Z1)</br>
 
 
@@ -154,14 +159,24 @@ Now we have to install Luminoth
 ```
 pip install luminoth
 ```
+or
+```
+pip3 install luminoth
+```
 After Installing luminoth we have to install tensorflow manually:
 For cpu:
 ```
 pip install tensorflow
 ```
+```
+pip3 install tensorflow
+```
 For GPU:
 ```
 pip install tensorflow-gpu
+```
+```
+pip3 install tensorflow-gpu
 ```
 We Now have all the dependencies.</br>
 To get the ouput run :
